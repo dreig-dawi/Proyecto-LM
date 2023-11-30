@@ -1,0 +1,135 @@
+
+/* Importing Fonts*/
+@font-face {
+    font-family: Poppins-Extrabold;
+    src: url(./font/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(./font/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins-extralight;
+    src: url(./font/Poppins/Poppins-ExtraLight.ttf);
+}
+
+/* Setting styles for the background image*/
+html{
+    background-image: url(./images/Aldiaz\ 062\ \(Kodak\ Ektar\ 100\)\ 6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+/* Allowing the header to flex with the display size and adding the different icons*/
+header{
+    display: flex;
+}
+.menuButton{
+    height: 30px;
+    padding: 1%;
+}
+.logo{
+    height: 30px;
+    padding: 1%;
+}
+.twitter{
+    height: 30px;
+    margin-left: auto;
+    padding: 1%;
+}
+.instagram{
+    height: 30px;
+    padding: 1%;
+}
+/*Styles for the main and main animations*/
+main{
+    padding-left: 10%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.motto{
+    padding-left: 1%;
+    width: 400px;
+    font-family: Poppins-ExtraBold;
+    font-size: 85px;
+    color: white;
+    padding-top:  5%;
+    padding-bottom: 2%;
+    height: 150px;
+}
+.find{
+    color: #96E172;
+}
+.greenpoint{
+    color: #3A5855;
+}
+.getStarted{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: Poppins-bold;
+    background-color: #3A5855;
+    width: 400px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* Animation for the get started button */
+.getStarted span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.getStarted span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.getStarted:hover span {
+    padding-right: 25px;
+}
+  
+.getStarted:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* Styles for the footer, making sure it sticks to the bottom */
+footer{
+    display: flex;
+    padding-left: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.aboutUs{
+    display: flex;
+    color: white;
+    font-family: Poppins-extralight;
+    padding-right: 1%;
+    width: 100px;
+}
+.contact{
+    color: white;
+    font-family: Poppins-extralight;
+    padding-right: 1%;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+}
