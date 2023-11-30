@@ -1,0 +1,11 @@
+div.photosHotel
+{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.photosHotel
+{
+    padding: 10px;
+}
