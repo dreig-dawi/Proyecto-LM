@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../scrollContainer.css">
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <main>
+            
+            <!--Hotel images-->
+            <div class="HotelTittle">
+                <h1>MontMari</h1>
+            </div>
+            <div class="photosHotel">
+                <img width="500" alt="Living room picture" title="Living room, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/142744953.jpg?k=5b56e9f8e3da30b0bc19399c68c56339728c115e5809688c0bf7377eeed3723b&o=&hp=1">
+                <img width="500" alt="Bedroom picture" title="Bedroom, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/259208809.jpg?k=6b95338a52387f226cc40f807ace1a2e7b0470eed29d1367432f4736bf5a3b26&o=&hp=1">
+                <img width="500" alt="Terrace picture" title="Terrace, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/302523362.jpg?k=c817ac4cce1d94b07efefd39de16da4feb8625a9287160d7c31392fda637da03&o=&hp=1">
+            </div>
+
+            <!--Hotel information-->
+            <div class="infoHotel">
+                <p><b>Location: </b>Jaume Ferrer, 15, Palma.</p>
+                <p><b>Capacity: </b>2 viajeros.</p>
+                <p><b>Category: </b>Turismo de interior.</p>
+                <p><b>Information: </b>Located in Palma de Mallorca, Montmari, Turismo de Interior are set in the historic centre in Plaça Drassana. They offer air-conditioned accommodation with free Wi-Fi, and a shared sun terrace.
+                    Montmari, Turismo de Interior feature stylish décor. All include a lounge area with satellite TV, comfortable beds, sheets and towels and a kitchen with dishwasher, microwave and hob.                   
+                    The Montmari, Turismo de Interior are set just 100 meters from the port and 2 minutes’ walk from the 15th century Sa Llotja. Palma Cathedral and the Almudaina Palace are 5 minutes’ walk away.
+                    Montmari, Turismo de Interior is 10 minutes’ walk from Plaça Major and the Arabic baths. It is located 10 km from Palma Airport.</p>
+            </div>
+
+            <!--Booking request form-->
+            <div class="bookingForm">
+                <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                    <fieldset>
+                        <legend>Booking request</legend>
+                        <label for="NameRequest">Full name:</label><br>
+                        <input type="text" class="NameRequest" name="name" required><br>
+                        <label for="date">Dates:</label><br>
+                        <input type="date" class="date" required><br>
+                        <label for="capacity">Number of guests:</label><br>
+                        <input type="number" class="capacity" name="guests quantity" placeholder="0" required><br>
+                        <label for="observations">Addtional information for the owner:</label><br>
+                        <textarea class="observations" maxlength="200" placeholder="Ex. 'We are bringing our dog with us.'"></textarea><br>
+                        <input type="submit" class="submit" value="Request booking">
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--Location with google maps-->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.581523348182!2d2.6414180755069!3d39.56904250679667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979244a1aeeefd%3A0x531efc5185b852cb!2sCarrer%20de%20Jaume%20Ferrer%2C%2015%2C%2007012%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1701285715914!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Google maps location"></iframe>
+            </div>
+
+        </main>
+
+        <!--Contact and information-->
+        <footer>
+            <div class="aboutUS"></div>
+            <div class="contact"></div>
+        </footer>
+    </body>
+</html>
