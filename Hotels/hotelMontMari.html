@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../scrollContainer.css">
     </head>
     <body>
         <header>
@@ -16,11 +15,22 @@
                 <h1>MontMari</h1>
             </div>
             <div class="photosHotel">
-                <img width="500" alt="Living room picture" title="Living room, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/142744953.jpg?k=5b56e9f8e3da30b0bc19399c68c56339728c115e5809688c0bf7377eeed3723b&o=&hp=1">
-                <img width="500" alt="Bedroom picture" title="Bedroom, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/259208809.jpg?k=6b95338a52387f226cc40f807ace1a2e7b0470eed29d1367432f4736bf5a3b26&o=&hp=1">
-                <img width="500" alt="Terrace picture" title="Terrace, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/302523362.jpg?k=c817ac4cce1d94b07efefd39de16da4feb8625a9287160d7c31392fda637da03&o=&hp=1">
+                <table>
+                    <tr> 
+                        <td rowspan="2">                   
+                            <img width="500" alt="Living room picture" title="Living room, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/142744953.jpg?k=5b56e9f8e3da30b0bc19399c68c56339728c115e5809688c0bf7377eeed3723b&o=&hp=1">
+                        </td>
+                        <td>
+                            <img width="250" alt="Bedroom picture" title="Bedroom, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/259208809.jpg?k=6b95338a52387f226cc40f807ace1a2e7b0470eed29d1367432f4736bf5a3b26&o=&hp=1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img width="250" alt="Terrace picture" title="Terrace, MontMari" src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/302523362.jpg?k=c817ac4cce1d94b07efefd39de16da4feb8625a9287160d7c31392fda637da03&o=&hp=1">                
+                        </td>
+                    </tr>
+                </table>
             </div>
-
             <!--Hotel information-->
             <div class="infoHotel">
                 <p><b>Location: </b>Jaume Ferrer, 15, Palma.</p>
@@ -38,14 +48,14 @@
                     <fieldset>
                         <legend>Booking request</legend>
                         <label for="NameRequest">Full name:</label><br>
-                        <input type="text" class="NameRequest" name="name" required><br>
+                        <input type="text" id="NameRequest" name="name" required><br>
                         <label for="date">Dates:</label><br>
-                        <input type="date" class="date" required><br>
+                        <input type="date" id="date" required><br>
                         <label for="capacity">Number of guests:</label><br>
-                        <input type="number" class="capacity" name="guests quantity" placeholder="0" required><br>
+                        <input type="number" id="capacity" name="guests quantity" placeholder="0" required><br>
                         <label for="observations">Addtional information for the owner:</label><br>
-                        <textarea class="observations" maxlength="200" placeholder="Ex. 'We are bringing our dog with us.'"></textarea><br>
-                        <input type="submit" class="submit" value="Request booking">
+                        <textarea id="observations" maxlength="200" placeholder="Ex. 'We are bringing our dog with us.'"></textarea><br>
+                        <input type="submit" id="submit" value="Request booking">
                     </fieldset>
                 </form>
             </div>
