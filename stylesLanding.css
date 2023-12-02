@@ -86,10 +86,15 @@ main{
 }
 /* Styles for about us page */
 .aboutUsBubble{
-    opacity: 90%;
-    margin-right: 10%;
-    margin-top: 20%;
-    border-radius: 5%;
+
+    margin-left: 5%;
+    margin-right: 15%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    opacity: 90%;  
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -99,7 +104,6 @@ main{
 .aboutUsImage{
     height: 500px;
     margin-top: 1%;
-    margin-left: 1%;
     box-shadow: 10px 10px 10px #3A5855;
     border-radius: 2%;
 }
