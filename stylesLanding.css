@@ -58,6 +58,9 @@ main{
     padding-bottom: 2%;
     height: 150px;
 }
+.we{
+    color: white;
+}
 .find{
     color: #96E172;
 }
@@ -81,6 +84,7 @@ main{
     cursor: pointer;
     text-decoration: none;
 }
+
 /* Animation for the get started button */
 .getStarted span{
     cursor: pointer;
@@ -145,6 +149,10 @@ section{
   
     position: relative;
   }
+  .whereTo{
+    color: white;
+    font-family: Poppins-bold;
+  }
   
   .btn-pluss{
     overflow: hidden;
@@ -152,7 +160,7 @@ section{
     display: block;
     padding-left: 5px;
     padding-right: 5px;
-    width: 30px;
+    width: 40px;
     padding-top: 20px;
     margin: 0 auto;
     transition: width .3s .5s ease, border-radius 1.1s ease;
