@@ -1,0 +1,38 @@
+/**Hotel's pictures display **/
+img
+{
+    aspect-ratio: 5/4;
+}
+td
+{
+    vertical-align: top;
+}
+
+/**Main picture display **/
+#welcome_img
+{
+    height: 410px;
+}
+
+/**Align info display for multiple choice hotel **/
+td.photosHotelInfo
+{
+    text-align: center;
+    vertical-align: top;
+}
+h2
+{
+    margin: 0% 0%;
+}
+td > p
+{
+    margin: 0% 0%;
+}
+
+/**Request and info display **/
+.request
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
