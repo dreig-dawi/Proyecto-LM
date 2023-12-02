@@ -84,6 +84,41 @@ main{
     cursor: pointer;
     text-decoration: none;
 }
+/* Styles for about us page */
+.aboutUsBubble{
+    opacity: 90%;
+    margin-right: 10%;
+    margin-top: 20%;
+    border-radius: 5%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutUsImage{
+    height: 500px;
+    margin-top: 1%;
+    margin-left: 1%;
+    box-shadow: 10px 10px 10px #3A5855;
+    border-radius: 2%;
+}
+.aboutUsText{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    font-family: Poppins-bold;
+    font-size: 20px;
+}
+.here{
+    color: #3A5855;
+    &:hover{
+        color: #96E172;
+        cursor: pointer;
+    }
+}
 
 /* Animation for the get started button */
 .getStarted span{
