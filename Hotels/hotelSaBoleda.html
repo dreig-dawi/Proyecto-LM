@@ -13,10 +13,10 @@
             
             <!--Hotel images-->
             <div class="HotelTittle">
-                <h1>Sa Boleda</h1>
+                <h1><u>Sa Boleda's Villas</u></h1>
             </div>
             <div class="photosHotel">
-                <table>
+                <table id="photosTable">
                     <tr>
                         <td>
                             <img class="photosHotel"  width="350" alt="Es Figueral picture" title="Es Figueral" src="../hotelPics/SaBoleda/Es_Figueral.jpg">
@@ -25,7 +25,7 @@
                             <img class="photosHotel"  width="350" alt="Es Sostre picture" title="Es Sostre" src="../hotelPics/SaBoleda/Es_Sostre.jpg">
                         </td>
                         <td>
-                            <img class="photosHotel"  width="350" alt="Sa CLastra picture" title="Sa CLastra" src="../hotelPics/SaBoleda/Sa_Clastra.jpg">
+                            <img class="photosHotel"  width="350" alt="Sa CLastra picture" title="Sa Clastra" src="../hotelPics/SaBoleda/Sa_Clastra.jpg">
                         </td>
                     </tr>
                     <tr>
@@ -47,6 +47,7 @@
                     </tr>
                 </table>
             </div>
+            <hr>
 
                 <!--Hotel information-->
             <div class="request">
@@ -60,11 +61,17 @@
                     <br>
                     The three houses are completely independent, enjoy total privacy and are specially designed for holidays with couples, family or friends.</p>
                 </div>
+
+                <!--Location with google maps-->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.908352565521!2d3.124524!3d39.7192423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129633116c593a8f%3A0x7c5902afde9e3a95!2sCasa%20Rural%20Sa%20Boleda!5e0!3m2!1ses!2ses!4v1701476023787!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
                 <!--Booking request form-->
                 <div class="bookingForm">
                     <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
                         <fieldset>
-                            <legend>Booking request</legend>
+                            <legend><h2>Booking request</h2></legend>
                             <label for="NameRequest">Full name:</label><br>
                             <input type="text" class="NameRequest" name="name" required><br>
                             <label for="date">Dates:</label><br>
@@ -76,11 +83,6 @@
                             <input type="submit" class="submit" value="Request booking">
                         </fieldset>
                     </form>
-                </div>
-
-                <!--Location with google maps-->
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.908352565521!2d3.124524!3d39.7192423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129633116c593a8f%3A0x7c5902afde9e3a95!2sCasa%20Rural%20Sa%20Boleda!5e0!3m2!1ses!2ses!4v1701476023787!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </main>
