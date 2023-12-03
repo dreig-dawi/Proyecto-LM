@@ -123,6 +123,87 @@ main{
         cursor: pointer;
     }
 }
+/*Styles for the contact us form*/
+.contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.contactDoubts{
+  color: white;
+  font-family: Poppins-Extrabold;
+  font-size: 40px;
+}
+.contactImage{
+  height: 500px;
+  box-shadow: 10px 10px 10px #3A5855;
+  border-radius: 2%;
+}
+.form {
+  align-self: center;
+  font-family: Poppins-extralight;
+  margin-left: 60px;
+}
+
+.form__input {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid #3A5855;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #3A5855;
+  margin: 0.625rem auto;
+  transition: all 250ms;
+  @media (min-width: 768px) {
+    width: clamp(120px, 35vw, 420px);
+  }
+  
+  &:focus {
+    outline: none;
+    border-top-color: rgba(0,0,0,0.1);
+  }
+  
+  &:focus + .form__label, &:not(:placeholder-shown) + .form__label {
+    transform: translateY(-5.50rem) scale(1);
+    color: white;
+  }
+  
+  &::placeholder {
+      display: none;
+      color: transparent;
+      -webkit-user-select: none; 
+      -ms-user-select: none;
+      user-select: none;
+  }
+  
+  &:not(:placeholder-shown) {
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.form__inputButton{
+  font-family: Poppins-extralight;
+  font-size: medium;
+  background-color: #3A5855;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #3A5855;
+  width: 120px;
+}
+
+.form__label {
+  font-size: 1rem;
+  color: #3A5855;
+  display: block;
+  transform: translate(1.25rem,-2.5rem);
+  transform-origin: 0 0; 
+  transition: all 500ms;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  pointer-events: none; 
+}
+
 
 /* Animation for the get started button */
 .getStarted span{
