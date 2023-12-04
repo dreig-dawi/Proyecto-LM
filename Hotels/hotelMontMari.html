@@ -6,37 +6,43 @@
     </head>
     <body>
         <header>
-
+        <nav class="btn-pluss-wrapper">
+            <div href="#" class="btn-pluss">
+                <ul>
+                    <li><a href="../landing.html"> Home </a></li>
+                    <li><a href=""> Find. </a></li>
+                    <li><a href="../contact.html"> Contact </a></li>
+                    <li><a href="../aboutUs.html"> About Us </a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="logo" href="../landing.html"> <img class="logo" src="../images/logo.png" alt="WeFind."></a>
+        <a class="twitter" href="https://twitter.com"><img class="twitter" src="../images/icons8-twitter-50.png" alt="Twitter"></a>
+        <a class="instagram" href="https://instagram.com"><img class="instagram" src="../images/icons8-instagram-50.png" alt="Instagram"></a>
         </header>
-
         <main>
             
             <!--Hotel images-->
             <div class="HotelTittle">
-                <h1>MontMari Apartment</h1>
+                <h1><u>MontMari's Apartment</u></h1>
             </div>
-            <div class="photosHotel">
-                <table>
-                    <tr> 
-                        <td rowspan="2">                   
-                            <img id="welcome_img" class="photosHotel" width="500" alt="Living room picture" title="Living room, MontMari" src="../hotelPics/MontMari/MontMari_living.jpg">
-                        </td>
-                        <td class="photosHotel">
-                            <img width="250" alt="Bedroom picture" title="Bedroom, MontMari" src="../hotelPics/MontMari/MontMari_bedroom.jpg">
-                        </td>
-                        <td class="photosHotel">
-                            <img width="250" alt="Kitchen pictue" title="Kitchen, MontMari" src="../hotelPics/MontMari/MontMari_kitchen.jpg">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="photosHotel" width="250" alt="Terrace picture" title="Terrace, MontMari" src="../hotelPics/MontMari/Montmari_terrace.jpg">                
-                        </td>
-                        <td>
-                            <img class="photosHotel" width="250" alt="Building picture" title="Building, MontMari" src="../hotelPics/MontMari/MontMari_building.jpg">
-                        </td>
-                    </tr>
-                </table>
+            <div id="photosContainer">
+                <div class="photosHotel">
+                    <div id="welcomeContainer">
+                        <img id="welcome_img" alt="Living room picture" title="Living room, MontMari" width="500" src="../hotelPics/MontMari/MontMari_living.jpg">
+                    </div>
+                    <div class="mini_photosHotel">
+                        <div class="top">
+                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, MontMari" width="250" src="../hotelPics/MontMari/MontMari_bedroom.jpg">
+                            <img class="mini_picHotel" alt="Kitchen picture" title="Kitchen, MontMari" width="250" src="../hotelPics/MontMari/MontMari_kitchen.jpg">
+                        </div>
+                        <br>
+                        <div class="bot">
+                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, MontMari" width="250" src="../hotelPics/MontMari/Montmari_terrace.jpg">
+                            <img class="mini_picHotel" alt="Builing picture" title="Building, MontMari" width="250" src="../hotelPics/MontMari/MontMari_building.jpg">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="request">
                 <!--Hotel information-->
@@ -55,16 +61,16 @@
                 <div class="bookingForm">
                     <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
                         <fieldset>
-                            <legend>Booking request</legend>
-                            <label for="NameRequest">Full name:</label><br>
-                            <input type="text" id="NameRequest" name="name" required><br>
-                            <label for="date">Dates:</label><br>
-                            <input type="date" id="date" required><br>
-                            <label for="capacity">Number of guests:</label><br>
-                            <input type="number" id="capacity" name="guests quantity" placeholder="0" required><br>
-                            <label for="observations">Addtional information for the owner:</label><br>
-                            <textarea id="observations" maxlength="200" placeholder="Ex. 'We are bringing our dog with us.'"></textarea><br>
-                            <input type="submit" id="submit" value="Request booking">
+                            <legend><h2>Booking request</h2></legend>
+                            <label for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="request" type="text" name="name" required><br>
+                            <label for="date"><b>Dates:</b></label><br>
+                            <input class="request" type="date" class="date" required><br>
+                            <label for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="request" type="number" name="guests-quantity" placeholder="0" required><br>
+                            <label for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
+                            <input class="request" type="submit" value="Request booking">
                         </fieldset>
                     </form>
                 </div>
@@ -77,8 +83,8 @@
 
         <!--Contact and information-->
         <footer>
-            <div class="aboutUS"></div>
-            <div class="contact"></div>
+            <a href="../contact.html"><div class="contact"> Contact </div></a>
+            <a href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
         </footer>
     </body>
 </html>

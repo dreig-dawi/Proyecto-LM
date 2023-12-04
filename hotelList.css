@@ -1,3 +1,35 @@
+/* Images display */
+.imgDisplay
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+img.imgExample
+{
+    aspect-ratio: 5/4;
+    height: 100%;
+}
+img + img
+{
+    margin: 2px;
+}
+
+/* Adjust divs to page */
+.section_filter
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.hotelExample
+{
+  display: flex;
+  justify-content: center;
+}
+fieldset
+{
+  display: inline-block;
+}
 /* Importing Fonts*/
 @font-face {
     font-family: Poppins-Extrabold;
@@ -179,126 +211,24 @@ section{
     }
   }
 
-/**Hotel's pictures display **/
-#photosContainer
-{
-  display: flex;
-  justify-content: center;
-}
-.photosHotel
-{
-  display: inline-flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 5px;
-  border: #3A5855 0.5em solid;
-  align-content: center;
-}
-.mini_photosHotel
-{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.mini_picHotel
-{
-  height: 92%;
-  border: #96E172 0.5em solid;
-}
-#welcome_img
-{
-  border: #96E172 0.5em solid;
-  height: 96%;
-}
-#welcomeContainer
-{
-  height: 100%;
-}
-.top, .bot
-{
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-/**Align info display for multiple choice hotel **/
-td.photosHotelInfo
-{
-    text-align: center;
-    vertical-align: top;
-}
-h2
-{
-    margin: 0% 0%;
-}
-td > p
-{
-    margin: 0% 0%;
-}
-
-/**Request and info display **/
-div.request
-{
-    display: flex;
-    justify-content: space-between;
-    margin: 1%;
-}
-.infoHotel, .bookingForm, .map
-{
-    margin: 1%;
-}
-
-/** Centering table */
-#photosTable
-{
-    margin: auto;
-}
-
-/** Letter style without fonts */
-p
-{
-    color: white;
-}
-
-b, h1, legend > h2
-{
-    color: #3A5855;
-} 
-
-h2, div > p >b, .request
-{
-    color: #96E172;
-}
-
-/* Color of Request Form */
-input[class="request"], textarea[placeholder]
-{
-  background-color: #96E172;
-  color: #3A5855;
-}
-input[value], input[placeholder], textarea[placeholder], input[type="radio"]
-{
-  color: #3A5855;
-  accent-color: #96e172;
-}
-
 /* Styles for the footer, making sure it sticks to the bottom */
 footer{
-  display: flex;
-  flex-direction: row-reverse;
-}
-.aboutUs{
-  display: flex;
-  color: white;
-  font-family: Poppins-extralight;
-  padding-right: 1%;
-  width: 100px;
-}
-.contact{
-  color: white;
-  font-family: Poppins-extralight;
-  padding-right: 1%;
-  width: 100px;
-}
-a{
-  text-decoration: none;
-}
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .aboutUs{
+    display: flex;
+    color: white;
+    font-family: Poppins-extralight;
+    padding-right: 1%;
+    width: 100px;
+  }
+  .contact{
+    color: white;
+    font-family: Poppins-extralight;
+    padding-right: 1%;
+    width: 100px;
+  }
+  a{
+    text-decoration: none;
+  }
