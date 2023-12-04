@@ -1,4 +1,4 @@
-/* Importing Fonts*/
+/** Importing fonts */
 @font-face {
     font-family: Poppins-Extrabold;
     src: url(./font/Poppins/Poppins-ExtraBold.ttf);
@@ -180,44 +180,29 @@ section{
   }
 
 /**Hotel's pictures display **/
-#photosContainer
+div.photosHotel
 {
   display: flex;
   justify-content: center;
 }
-.photosHotel
+img.photosHotel
 {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 5px;
-  border: #3A5855 0.5em solid;
-  align-content: center;
+    aspect-ratio: 5/4;
+    border: #96E172 5px solid;
 }
-.mini_photosHotel
+td
 {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+    text-align: center;
 }
-.mini_picHotel
+td.photosHotelInfo
 {
-  height: 92%;
-  border: #96E172 0.5em solid;
+    border: #3A5855 5px solid;
 }
+
+/**Main picture display **/
 #welcome_img
 {
-  border: #96E172 0.5em solid;
-  height: 96%;
-}
-#welcomeContainer
-{
-  height: 100%;
-}
-.top, .bot
-{
-  display: flex;
-  flex-wrap: nowrap;
+    height: 410px;
 }
 
 /**Align info display for multiple choice hotel **/
@@ -233,6 +218,10 @@ h2
 td > p
 {
     margin: 0% 0%;
+}
+table
+{
+    width: 100%;
 }
 
 /**Request and info display **/
@@ -253,7 +242,17 @@ div.request
     margin: auto;
 }
 
-/** Letter style without fonts */
+/** Background picture and letter color */
+html
+{
+    background-image: url(./images/Aldiaz\ 062\ \(Kodak\ Ektar\ 100\)\ 6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
 p
 {
     color: white;
@@ -268,8 +267,7 @@ h2, div > p >b, .request
 {
     color: #96E172;
 }
-
-/* Color of Request Form */
+ /* Color of Request Form */
 input[class="request"], textarea[placeholder]
 {
   background-color: #96E172;
