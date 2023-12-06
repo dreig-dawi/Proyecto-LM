@@ -80,29 +80,34 @@
 
                 <!--Booking request form-->
                 <div class="bookingForm">
-                    <form action="https://www3.caib.es/xestib/?idioma=es" method="get">
+                    <form class="form" action="https://www3.caib.es/xestib/?idioma=es" method="get">
                         <fieldset>
                             <legend><h2>Booking request</h2></legend>
-                            <label for="NameRequest"><b>Full name:</b></label><br>
-                            <input class="request" type="text" name="name" required><br>
-                            <label for="date"><b>Dates:</b></label><br>
-                            <input class="request" type="date" class="date" required><br>
+                            <label class="form_label" for="NameRequest"><b>Full name:</b></label><br>
+                            <input class="form__input" type="text" name="name" required><br>
+                            <label class="form_label" for="date"><b>Dates:</b></label><br>
+                            <input class="form__input" type="date" class="date" required><br>
                             <b>Room:</b> <br>
-                            <input class="request" type="radio" name="apartment">
-                            <label for="apartment">Es Figueral</label>
-                            <br>
-                            <input class="request" type="radio" name="apartment">
-                            <label for="apartment">Es Sostre</label>
-                            <br>
-                            <input class="request" type="radio" name="apartment">
-                            <label for="apartment">Sa Clastra</label>
-                            <br>
-                            <label for="capacity"><b>Number of guests:</b></label><br>
-                            <input class="request" type="number" name="guests-quantity" placeholder="0" required><br>
-                            <label for="observations"><b>Addtional information for the owner:</b></label><br>
+                            <div class="room_selector">
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Es Figueral</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Es Sostre</label>                                
+                                </div>
+                                <div class="choice">
+                                    <input class="form__input" type="radio" name="apartment">
+                                    <label class="choice" for="apartment">Sa Clastra</label>                                
+                                </div>
+                            </div>
+                            <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required><br>
+                            <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
                             <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
                             <br>
-                            <input class="request" type="submit" value="Request booking">
+                            <input class="form__inputButton" type="submit" value="Request booking">
                         </fieldset>
                     </form>
                 </div>

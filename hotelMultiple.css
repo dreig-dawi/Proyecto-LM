@@ -11,6 +11,10 @@
     font-family: Poppins-extralight;
     src: url(./font/Poppins/Poppins-ExtraLight.ttf);
 }
+@font-face {
+  font-family: Poppins-light;
+  src: url(./font/Poppins/Poppins-Light.ttf);
+}
 
 /* Setting styles for the background image*/
 html{
@@ -256,27 +260,32 @@ html
 p
 {
     color: white;
+    font-family: Poppins-light;
 }
 
 b, h1, legend > h2
 {
     color: #3A5855;
+    font-family: Poppins-Extrabold;
 } 
 
 h2, div > p >b, .request
 {
     color: #96E172;
+    font-family: Poppins-light;
 }
- /* Color of Request Form */
-input[class="request"], textarea[placeholder]
+main
 {
-  background-color: #96E172;
-  color: #3A5855;
+  font-family: Poppins-bold;
 }
-input[value], input[placeholder], textarea[placeholder], input[type="radio"]
+b, h1, legend
 {
-  color: #3A5855;
-  accent-color: #96e172;
+  font-family: Poppins-Extrabold;
+}
+p, label
+{
+  font-family: Poppins-bold;
+  align-self: center;
 }
 
 /* Styles for the footer, making sure it sticks to the bottom */
@@ -299,4 +308,43 @@ footer{
 }
 a{
   text-decoration: none;
+}
+.form {
+  align-self: center;
+  font-family: Poppins-extralight;
+  margin-left: 60px;
+}
+
+.form__input {
+  width: clamp(120px, 50vw, 420px);
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid #3A5855;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px #3A5855;
+  margin-bottom: 15px;
+}
+.form__input[type="radio"]
+{
+  width: clamp(5px, 50vw, 20px);
+  margin-top: 10px;
+}
+.form__inputButton{
+  font-family: Poppins-extralight;
+  font-size: medium;
+  background-color: #3A5855;
+  color: white;
+}
+div.room_selector
+{
+  display: flex;
+  flex-direction: column;
+}
+div.choice
+{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 15px;
+  gap: 5px;
 }
