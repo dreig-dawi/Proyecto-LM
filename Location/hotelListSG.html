@@ -28,9 +28,9 @@
                     <fieldset class="sections">
                         <legend>Section:</legend>
                         <form>
-                        <a href="../Category/hotelListHotel.html"><input type="button" value="Categoy"></a>
-                        <a href="../Rating/hotelList5.html"><input type="button" value="Rating"></a>
-                        <a href="../Location/hotelListPalma.html"><input type="button" value="Location"></a>
+                        <a href="../Category/hotelListHotel.html"><input class="form__inputButton" type="button" value="Categoy"></a>
+                        <a href="../Rating/hotelList5.html"><input class="form__inputButton" type="button" value="Rating"></a>
+                        <a href="../Location/hotelListPalma.html"><input class="form__inputButton" type="button" value="Location"></a>
                         </form>
                     </fieldset>
                 </div>
@@ -40,11 +40,11 @@
                     <fieldset>
                         <legend>Loccated in:</legend>
                         <form>
-                            <a href="./hotelListPalma.html"><input type="button" value="Palma"></a>
-                            <a href="./hotelListCalvia.html"><input type="button" value="Calvia"></a>
-                            <a href="./hotelListCampos.html"><input type="button" value="Campos"></a>
-                            <a href="./hotelListSM.html"><input type="button" value="Santa Maria"></a>
-                            <a href="./hotelListSG.html"><input type="button" value="Santa Margalida"></a>
+                            <a href="./hotelListPalma.html"><input class="form__inputButton" type="button" value="Palma"></a>
+                            <a href="./hotelListCalvia.html"><input class="form__inputButton" type="button" value="Calvia"></a>
+                            <a href="./hotelListCampos.html"><input class="form__inputButton" type="button" value="Campos"></a>
+                            <a href="./hotelListSM.html"><input class="form__inputButton" type="button" value="Santa Maria"></a>
+                            <a href="./hotelListSG.html"><input class="form__inputButton" type="button" value="Santa Margalida"></a>
                         </form>
                 </div>
             </div>
@@ -56,7 +56,10 @@
                     <!--Hotel information-->
                     <a href="../Hotels/hotelCharly.html">
                         <fieldset>
-                            <h1>Charly's Apartment</h1>
+                            <div class="hotel_title">                                
+                                <h1>Charly's Apartment</h1>
+                                <b>Hostal</b>
+                            </div>
                             <div class="imgDisplay">
                                 <img class="imgExample" src="../hotelPics/Charly/Charly_1bedroom.jpg" width="250" alt="Palma picture">
                                 <img class="imgExample" src="../hotelPics/Charly/Charly_2bedroom.jpg" width="250" alt="Palma picture">
@@ -68,14 +71,35 @@
                         </fieldset>
                     </a>
                 </div>
+                <div class="hotelExample">
+
+                    <!--Villa information-->
+                    <a href="../Hotels/hotelSaBoleda.html">
+                    <fieldset>
+                        <div class="hotel_title">                            
+                            <h1>Sa Boleda</h1>
+                            <b>Villa</b>
+                        </div>
+                        <div class="imgDisplay">
+                            <img class="imgExample" src="../hotelPics/SaBoleda/Es_Figueral.jpg" width="250" alt="Villa picture">
+                            <img class="imgExample" src="../hotelPics/SaBoleda/Sa_Clastra.jpg" width="250" alt="Villa picture">
+                            <img class="imgExample" src="../hotelPics/SaBoleda/Es_Sostre.jpg" width="250" alt="Villa picture">
+                        </div>
+                        <p><b>Capacity:</b> 6 - 4 adults</p>
+                        <p><b>Rating: </b></p>
+                        <p><b>Location:</b> Cami Son Niu, 07450 Santa Margalida, Balearic Islands.</p>
+                    </fieldset>  
+                    </a>
+                </div>
+                <div class="hotelExample">
             </div>
             
 
         </main>
 
         <footer>
+            <a href="../aboutUs.html"><div class="aboutUs">About Us</div></a>
             <a href="../contact.html"><div class="contact"> Contact </div></a>
-            <a href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
         </footer>
     </body>
 </html>

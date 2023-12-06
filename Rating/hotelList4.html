@@ -28,9 +28,9 @@
                     <fieldset class="sections">
                         <legend>Section:</legend>
                         <form>
-                        <a href="../Category/hotelListHotel.html"><input type="button" value="Categoy"></a>
-                        <a href="../Rating/hotelList5.html"><input type="button" value="Rating"></a>
-                        <a href="../Location/hotelListPalma.html"><input type="button" value="Location"></a>
+                        <a href="../Category/hotelListHotel.html"><input class="form__inputButton" type="button" value="Categoy"></a>
+                        <a href="../Rating/hotelList5.html"><input class="form__inputButton" type="button" value="Rating"></a>
+                        <a href="../Location/hotelListPalma.html"><input class="form__inputButton" type="button" value="Location"></a>
                         </form>
                     </fieldset>
                 </div>
@@ -40,11 +40,11 @@
                     <fieldset>
                         <legend>Rated by:</legend>
                         <form>
-                            <a href="./hotelList5.html"><input type="button" value="5"></a>
-                            <a href="./hotelList4.html"><input type="button" value="4"></a>
-                            <a href="./hotelList3.html"><input type="button" value="3"></a>
-                            <a href="./hotelList2.html"><input type="button" value="2"></a>
-                            <a href="./hotelList1.html"><input type="button" value="1"></a>
+                            <a href="./hotelList5.html"><input class="form__inputButton" type="button" value="5"></a>
+                            <a href="./hotelList4.html"><input class="form__inputButton" type="button" value="4"></a>
+                            <a href="./hotelList3.html"><input class="form__inputButton" type="button" value="3"></a>
+                            <a href="./hotelList2.html"><input class="form__inputButton" type="button" value="2"></a>
+                            <a href="./hotelList1.html"><input class="form__inputButton" type="button" value="1"></a>
                         </form>
                 </div>
             </div>
@@ -56,12 +56,16 @@
                     <!--Hotel information-->
                     <a href="EL HOTEL EN CUESTION">
                         <fieldset>
-                            <h1>Hotel name</h1>
+                            <div class="hotel_title">                                
+                                <h1>Hotel name</h1>
+                                <b>Hotel category</b>
+                            </div>
                             <div class="imgDisplay">
                                 <img class="imgExample" src="" width="90" alt="Hotel picture">
                             </div>
-                            <p>Location</p>
-                            <p>Rating</p>
+                            <p><b>Capacity:</b></p>
+                            <p><b>Location:</b></p>
+                            <p><b>Rating:</b></p>
                         </fieldset>
                     </a>
                 </div>
@@ -71,8 +75,8 @@
         </main>
 
         <footer>
+            <a href="../aboutUs.html"><div class="aboutUs">About Us</div></a>
             <a href="../contact.html"><div class="contact"> Contact </div></a>
-            <a href="../aboutUs.html" ><div class="aboutUs">About Us</div></a>
         </footer>
     </body>
 </html>

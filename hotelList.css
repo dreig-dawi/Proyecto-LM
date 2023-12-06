@@ -14,7 +14,7 @@ img + img
     margin: 2px;
 }
 
-/* Adjust divs to page */
+/* Adjust section to page */
 .section_filter
 {
   display: flex;
@@ -30,6 +30,18 @@ fieldset
 {
   display: inline-block;
 }
+div.hotel_title
+{
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.form__inputButton{
+  font-family: Poppins-extralight;
+  font-size: medium;
+  background-color: #3A5855;
+  color: white;
+}
 /* Importing Fonts*/
 @font-face {
     font-family: Poppins-Extrabold;
@@ -42,6 +54,10 @@ fieldset
 @font-face {
     font-family: Poppins-extralight;
     src: url(./font/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Poppins-Light;
+  src: url(./font/Poppins/Poppins-Light.ttf);
 }
 
 /* Setting styles for the background image*/
@@ -232,3 +248,17 @@ footer{
   a{
     text-decoration: none;
   }
+
+  /* Lettering style */
+main
+{
+  font-family: Poppins-bold;
+}
+b, h1, legend
+{
+  font-family: Poppins-Extrabold;
+}
+p, label
+{
+  font-family: Poppins-light;
+}
