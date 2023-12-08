@@ -104,7 +104,12 @@ main{
   font-family: Poppins-Extrabold;
   font-size: 30px;
 }
-
+.getStarted:hover + .display-on-hover {
+  display: block;
+}
+.display-on-hover {
+  display: none;
+}
 
 /* Styles for about us page */
 .aboutUsBubble{
