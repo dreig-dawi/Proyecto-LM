@@ -25,6 +25,10 @@ html{
     background-attachment: fixed;
     
 }
+main{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
 /* Allowing the header to flex with the display size and adding the different icons*/
 header{
@@ -195,7 +199,6 @@ section{
   flex-wrap: nowrap;
   justify-content: center;
   gap: 5px;
-  border: #3A5855 0.5em solid;
   align-content: center;
 }
 .mini_photosHotel
@@ -207,11 +210,10 @@ section{
 .mini_picHotel
 {
   height: 92%;
-  border: #96E172 0.5em solid;
+  padding: 2%;
 }
 #welcome_img
 {
-  border: #96E172 0.5em solid;
   height: 96%;
 }
 #welcomeContainer
@@ -246,9 +248,22 @@ div.request
     justify-content: space-between;
     margin: 1%;
 }
-.infoHotel, .bookingForm, .map
+.infoHotel
 {
     margin: 1%;
+}
+.bookingForm{
+  margin: 1%;
+  border: none;
+}
+.map{
+  margin: 1%;
+}
+fieldset{
+  border: none;
+}
+.form__inputButton{
+  border-radius: 5px;
 }
 
 /** Centering table */
