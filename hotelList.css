@@ -6,8 +6,11 @@
 }
 img.imgExample
 {
-    aspect-ratio: 5/4;
+    display: flex;
     height: 100%;
+    padding-right: 2%;
+    width: 25%;
+    align-self: center;
 }
 img + img
 {
@@ -15,6 +18,13 @@ img + img
 }
 
 /* Adjust section to page */
+main{
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
 .section_filter
 {
   display: flex;
@@ -25,10 +35,30 @@ img + img
 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
+.hotelTitle
+{
+  display: flex;
+}
+.HotelList{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #3A5855;
+  border-radius: 20px;
+  
+  
+
+}
+
 fieldset
 {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: none;
 }
 div.hotel_title
 {
@@ -41,6 +71,8 @@ div.hotel_title
   font-size: medium;
   background-color: #3A5855;
   color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #3A5855;
 }
 
 /* Importing Fonts*/

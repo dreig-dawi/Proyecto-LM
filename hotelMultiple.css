@@ -184,23 +184,33 @@ section{
   }
 
 /**Hotel's pictures display **/
-div.photosHotel
+main{
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.photosHotel
 {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 img.photosHotel
 {
-    aspect-ratio: 5/4;
-    border: #96E172 5px solid;
+  padding: 1%;
 }
 td
 {
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 td.photosHotelInfo
 {
-    border: #3A5855 5px solid;
+  background-color: #3A5855;
+  border-radius: 15px;
+  width: 20%;
 }
 
 /**Main picture display **/
@@ -235,9 +245,24 @@ div.request
     justify-content: space-between;
     margin: 1%;
 }
-.infoHotel, .bookingForm, .map
+.infoHotel
 {
     margin: 1%;
+}
+fieldset{
+  border: none;
+}
+.bookingForm{
+  margin: 1%;
+  border: none;
+}
+.map{
+  margin: auto;
+}
+.multipleChoiceMap{
+  border: none;
+  width: 800px;
+  height: 300px;
 }
 
 /** Centering table */

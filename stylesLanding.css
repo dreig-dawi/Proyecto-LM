@@ -84,6 +84,36 @@ main{
     cursor: pointer;
     text-decoration: none;
 }
+/*Styles for the find page*/
+
+.getHome{
+  margin-top: 5%;
+  color: white;
+  font-family: Poppins-Extrabold;
+  font-size: 40px;
+
+}
+.filterBubble{
+  margin-top: 3%;
+  display: flex;
+}
+.preference{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: #96E172;
+  font-family: Poppins-Extrabold;
+  font-size: 30px;
+}
+.hotelStar{
+  height: 20px;
+}
+.basedOn{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 2%;
+  font-family: Poppins-bold;
+}
+
 /* Styles for about us page */
 .aboutUsBubble{
 
@@ -234,11 +264,12 @@ main{
 
 /* Styles for the footer, making sure it sticks to the bottom */
 footer{
-    display: flex;
-    padding-left: 5%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  display: flex;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .aboutUs{
     display: flex;
