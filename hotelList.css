@@ -3,6 +3,8 @@
 {
     display: flex;
     flex-wrap: nowrap;
+    height: 175px;
+    justify-content: space-around;
 }
 img.imgExample
 {
@@ -11,10 +13,6 @@ img.imgExample
     padding-right: 2%;
     width: 25%;
     align-self: center;
-}
-img + img
-{
-    margin: 2px;
 }
 
 /* Adjust section to page */
@@ -48,11 +46,18 @@ main{
   padding-right: 5%;
   background-color: #3A5855;
   border-radius: 20px;
-  
-  
-
 }
-
+.Rating
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.hotelStar
+{
+  width: 25px;
+}
 fieldset
 {
   display: flex;
@@ -74,7 +79,11 @@ div.hotel_title
   border-radius: 5px;
   box-shadow: 1px 1px 1px #3A5855;
 }
-
+hr
+{
+  color: #e9e5e5;
+  width: 100%;
+}
 /* Importing Fonts*/
 @font-face {
     font-family: Poppins-Extrabold;

@@ -103,7 +103,7 @@
                                 <b>Room:</b> <br>
                                 <div class="room_selector">
                                     <div class="choice">
-                                        <input class="form__input" type="radio" name="apartment">
+                                        <input class="form__input" type="radio" name="apartment" checked>
                                         <label class="choice" for="apartment">Individual room</label>                                
                                     </div>
                                     <div class="choice">
@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
                                 <label class="form_label" for="capacity"><b>Number of guests:</b></label><br>
-                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required><br>
+                                <input class="form__input" type="number" name="guests-quantity" placeholder="0" required min="1" max="2"><br>
                                 <label class="form_label" for="observations"><b>Addtional information for the owner:</b></label><br>
                                 <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br>
                                 <br>

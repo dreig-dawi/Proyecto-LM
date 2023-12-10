@@ -29,22 +29,22 @@
             
             <!--Hotel images-->
             <div class="HotelTittle">
-                <h1>MontMari's Apartment</h1>
+                <h1><u>MontMari's Apartment</u></h1>
             </div>
             <div id="photosContainer">
                 <div class="photosHotel">
                     <div id="welcomeContainer">
-                        <img id="welcome_img" alt="Living room picture" title="Living room, MontMari" width="500" src="../hotelPics/MontMari/MontMari_living.jpg">
+                        <img id="welcome_img" alt="Living room picture" title="Living room, MontMari" src="../hotelPics/MontMari/MontMari_living.jpg">
                     </div>
                     <div class="mini_photosHotel">
                         <div class="top">
-                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, MontMari" width="250" src="../hotelPics/MontMari/MontMari_bedroom.jpg">
-                            <img class="mini_picHotel" alt="Kitchen picture" title="Kitchen, MontMari" width="250" src="../hotelPics/MontMari/MontMari_kitchen.jpg">
+                            <img class="mini_picHotel" alt="Bedroom picture" title="Bedroom, MontMari" src="../hotelPics/MontMari/MontMari_bedroom.jpg">
+                            <img class="mini_picHotel" alt="Kitchen picture" title="Kitchen, MontMari" src="../hotelPics/MontMari/MontMari_kitchen.jpg">
                         </div>
                         <br>
                         <div class="bot">
-                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, MontMari" width="250" src="../hotelPics/MontMari/Montmari_terrace.jpg">
-                            <img class="mini_picHotel" alt="Building picture" title="Building, MontMari" width="250" src="../hotelPics/MontMari/MontMari_building.jpg">
+                            <img class="mini_picHotel" alt="Terrace picture" title="Terrace, MontMari" src="../hotelPics/MontMari/Montmari_terrace.jpg">
+                            <img class="mini_picHotel" alt="Building picture" title="Building, MontMari" src="../hotelPics/MontMari/MontMari_building.jpg">
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                             <label for="date"><b>Dates:</b></label><br>
                             <input class="form__input" type="date" class="date" required><br>
                             <label for="capacity"><b>Number of guests:</b></label><br>
-                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required><br>
+                            <input class="form__input" type="number" name="guests-quantity" placeholder="0" required min="1" max="2"><br>
                             <label for="observations"><b>Addtional information for the owner:</b></label><br>
                             <textarea class="observations" maxlength="200" placeholder="Ex. 'Is it possible to bring our pet?' 'Could you provide a baby cot and a high chair for our son?" rows="5" cols="30"></textarea><br><br>
                             <input class="form__inputButton" type="submit" value="Request booking">
