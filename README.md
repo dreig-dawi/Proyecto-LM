@@ -32,5 +32,5 @@ To view the project locally, follow these steps:
 Happy coding and happy travels in Mallorca!
 
 
-##Authors:
+## Authors:
 ### Aleix Díaz & Dario Reig
