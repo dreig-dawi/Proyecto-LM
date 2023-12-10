@@ -198,13 +198,8 @@ main{
 }
 img.photosHotel
 {
-  padding: 1%;
-}
-td
-{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 250px;
 }
 td.photosHotelInfo
 {
@@ -257,7 +252,7 @@ fieldset{
   border: none;
 }
 .map{
-  margin: auto;
+  margin: initial;
 }
 .multipleChoiceMap{
   border: none;

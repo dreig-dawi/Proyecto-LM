@@ -188,18 +188,12 @@ section{
   }
 
 /**Hotel's pictures display **/
-#photosContainer
-{
-  display: flex;
-  justify-content: center;
-}
 .photosHotel
 {
-  display: inline-flex;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 5px;
-  align-content: center;
+  gap: 10px;
 }
 .mini_photosHotel
 {
@@ -207,24 +201,17 @@ section{
   flex-direction: column;
   gap: 5px;
 }
-.mini_picHotel
-{
-  height: 92%;
-  padding: 2%;
-}
 #welcome_img
 {
-  height: 96%;
-}
-#welcomeContainer
-{
+  width: 500px;
   height: 100%;
 }
-.top, .bot
+.mini_picHotel
 {
-  display: flex;
-  flex-wrap: nowrap;
+  width: 250px;
+  height: 100%;
 }
+
 
 /**Align info display for multiple choice hotel **/
 td.photosHotelInfo
